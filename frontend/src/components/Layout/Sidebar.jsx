@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { 
-  LayoutDashboard, Package, TruckIcon, PackageOpen, 
+  LayoutDashboard, Package, Truck, PackageOpen, 
   ArrowRightLeft, ClipboardEdit, BookOpen, Warehouse, 
   User, LogOut 
 } from 'lucide-react';
@@ -14,7 +14,7 @@ export const Sidebar = () => {
   const menuItems = [
     { path: ROUTES.DASHBOARD, icon: LayoutDashboard, label: 'Dashboard' },
     { path: ROUTES.PRODUCTS, icon: Package, label: 'Products' },
-    { path: ROUTES.RECEIPTS, icon: TruckIcon, label: 'Receipts' },
+    { path: ROUTES.RECEIPTS, icon: Truck, label: 'Receipts' },
     { path: ROUTES.DELIVERIES, icon: PackageOpen, label: 'Deliveries' },
     { path: ROUTES.TRANSFERS, icon: ArrowRightLeft, label: 'Transfers' },
     { path: ROUTES.ADJUSTMENTS, icon: ClipboardEdit, label: 'Adjustments' },

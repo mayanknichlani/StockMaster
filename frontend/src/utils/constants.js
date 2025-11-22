@@ -3,6 +3,7 @@ export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:50
 export const ROUTES = {
   LOGIN: '/login',
   SIGNUP: '/signup',
+  FORGOT_PASSWORD: '/forgot-password',
   DASHBOARD: '/dashboard',
   PRODUCTS: '/products',
   RECEIPTS: '/receipts',
@@ -20,4 +21,13 @@ export const STATUS = {
   READY: 'ready',
   DONE: 'done',
   CANCELLED: 'cancelled',
+};
+
+export const ROLES = {
+  ADMIN: 'admin',
+  MANAGER: 'manager',
+  USER: 'user',
+  WAREHOUSE_STAFF: 'warehouse_staff',
+  INVENTORY_MANAGER: 'inventory_manager',
+  VIEWER: 'viewer',
 };

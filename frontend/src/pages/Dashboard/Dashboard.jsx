@@ -6,7 +6,7 @@ import { Card } from '../../components/Common/Card';
 import { Badge } from '../../components/Common/Badge';
 import { LoadingSpinner } from '../../components/Common/LoadingSpinner';
 import { dashboardApi } from '../../api/dashboardApi';
-import { Package, AlertTriangle, TruckIcon, PackageOpen } from 'lucide-react';
+import { Package, AlertTriangle, Truck, PackageOpen } from 'lucide-react';
 import { ROUTES } from '../../utils/constants';
 
 export const Dashboard = () => {
@@ -71,7 +71,7 @@ export const Dashboard = () => {
           <KPICard
             title="Pending Receipts"
             value={kpis.pendingReceipts || 0}
-            icon={TruckIcon}
+            icon={Truck}
             color="green"
           />
           <KPICard

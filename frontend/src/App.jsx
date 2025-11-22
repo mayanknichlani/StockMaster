@@ -5,6 +5,7 @@ import { useContext } from 'react';
 // Auth Pages
 import { Login } from './pages/Auth/Login';
 import { Signup } from './pages/Auth/Signup';
+import { ForgotPassword } from './pages/Auth/ForgotPassword';
 
 // Main Pages
 import { Dashboard } from './pages/Dashboard/Dashboard';
@@ -38,6 +39,7 @@ function App() {
           {/* Public Routes */}
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.SIGNUP} element={<Signup />} />
+          <Route path={ROUTES.FORGOT_PASSWORD} element={<ForgotPassword />} />
 
           {/* Protected Routes */}
           <Route path={ROUTES.DASHBOARD} element={<PrivateRoute><Dashboard /></PrivateRoute>} />
